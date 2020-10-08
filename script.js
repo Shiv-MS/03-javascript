@@ -13,6 +13,7 @@ function validate_inputs(prompts_from_user) {
   }
 }
 
+
 // WHEN all prompts are answered
 // THEN a password is generated that matches the selected criteria
 function gen_pass(crieteria) {
@@ -36,8 +37,6 @@ function gen_pass(crieteria) {
 }
 
 
-
-
 // WHEN prompted for password criteria
 // THEN I choose lowercase, uppercase, numeric, and/or special characters
 function prompt_user() {
@@ -58,11 +57,12 @@ prompt_user()
 
 gen_pass()
 
+
 // WHEN the password is generated
 // THEN the password is either displayed in an alert or written to the page
 
-
 var generateBtn = document.querySelector("#generate");
+
 
 // Write password to the #password input
 function writePassword() {
