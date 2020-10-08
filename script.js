@@ -35,6 +35,30 @@ function gen_pass(crieteria) {
   console.log(special_characters)
 }
 
+
+
+
+// WHEN prompted for password criteria
+// THEN I choose lowercase, uppercase, numeric, and/or special characters
+function prompt_user() {
+  var include_number = confirm("Do you want numbers in your password?");
+  var include_special = confirm("Do you want special characters?");
+  var include_uppercase = confirm("Do you want uppercase letters?");
+  var include_lowercase = confirm("Do you want lowercase letters?");
+
+  // THEN I choose a length of at least 8 characters and no more than 128 characters
+  var requested_length = prompt("How long do you need this password?")
+
+  validate_inputs({})
+}
+
+prompt_user()
+
+
+
+gen_pass()
+
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
