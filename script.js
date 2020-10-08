@@ -27,11 +27,11 @@ function gen_pass(crieteria) {
 
 
   // Create a loop that goes until it hits the password_length and creates an array
-  for (i = 0; i < prompts_from_user.password_length; i++) {
-    var index = Math.floor(Math.random() * prompts_from_user.password_length);
-    var digit = passArray[index];
-    results.push(pass_array);
-  }
+  // for (i = 0; i < prompts_from_user.password_length; i++) {
+  //   var index = Math.floor(Math.random() * prompts_from_user.password_length);
+  //   var digit = passArray[index];
+  //   results.push(pass_array);
+  // }
   // Flatten the array
   console.log(special_characters)
 }
