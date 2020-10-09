@@ -17,6 +17,8 @@ function validate_inputs(prompts_from_user) {
 // WHEN all prompts are answered
 // THEN a password is generated that matches the selected criteria
 function gen_pass(crieteria) {
+  prompt_user()
+  
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   const alphabet_cap = alphabet.map(letter => letter.toUpperCase());
 
@@ -27,13 +29,10 @@ function gen_pass(crieteria) {
 
 
   // Create a loop that goes until it hits the password_length and creates an array
-  // for (i = 0; i < prompts_from_user.password_length; i++) {
-  //   var index = Math.floor(Math.random() * prompts_from_user.password_length);
-  //   var digit = passArray[index];
-  //   results.push(pass_array);
-  // }
+  for (var i = 0; i < prompts_from_user; i++) {
+    
+  }
   // Flatten the array
-  console.log(special_characters)
 }
 
 
@@ -51,11 +50,6 @@ function prompt_user() {
   validate_inputs({})
 }
 
-prompt_user()
-
-
-
-gen_pass()
 
 
 // WHEN the password is generated
@@ -66,6 +60,8 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  gen_pass()
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
