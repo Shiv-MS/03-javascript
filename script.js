@@ -9,7 +9,7 @@ function validate_inputs(prompts_from_user, key_value) {
     alert("Valid Inputs, running pass gen")
     gen_pass(prompts_from_user)
   } else {
-    alert("found an answer not answred")
+    alert("found an answer not answered")
   }
 }
 
