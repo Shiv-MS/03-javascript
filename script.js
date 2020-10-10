@@ -9,7 +9,7 @@ function validate_inputs(prompts_from_user, key_value) {
     alert("Valid Inputs, running pass gen")
     gen_pass(prompts_from_user)
   } else {
-    alert("found an answer not answered")
+    alert("Found an answer not answered. Please try again.")
   }
 }
 
@@ -58,8 +58,11 @@ function prompt_user(user) {
   // THEN I choose a length of at least 8 characters and no more than 128 characters
   var requested_length = prompt("How long do you need this password?")
 
-  if (requested_length > 8 && requested_length < 128) {
+  if (requested_length >= 8 && requested_length <= 128) {
     console.log("Length is valid")
+  } else {
+    alert("Length is not valid. Please try again.")
+    gen_pass(crieteria)
   }
   validate_inputs({ requested_length: requested_length, number: include_number, special: include_special, upper: include_uppercase, lower: include_lowercase }, true)
 
