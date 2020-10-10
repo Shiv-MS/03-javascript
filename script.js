@@ -62,7 +62,7 @@ function prompt_user(user) {
     console.log("Length is valid")
   } else {
     alert("Length is not valid. Please try again.")
-    gen_pass(crieteria)
+    prompt_user(user)
   }
   validate_inputs({ requested_length: requested_length, number: include_number, special: include_special, upper: include_uppercase, lower: include_lowercase }, true)
 
